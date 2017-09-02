@@ -21,12 +21,15 @@ import jaxx10 from './jaxx/10.PNG';
 import jaxx11 from './jaxx/11.PNG';
 import jaxx12 from './jaxx/12.PNG';
 
+const Web3 = require('web3')
+const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/tBZ5seblTdsWRfzyNu9j'))
 
 const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home}/>
       <Route path="/challenge" component={Challenge}/>
+      <Route path="/balance" component={Balance}/>
     </div>
   </Router>
 )
@@ -180,6 +183,35 @@ const Steps = {
     <img src={jaxx11} className='pad'/>
     <img src={jaxx12} className='pad'/>
   </div>
+}
+
+class Balance extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      address: ''
+    }
+  }
+
+  changeAddress(event) {
+    console.log(event.target.value)
+    const that = this
+    web3.eth.getBalance(event.target.value)
+      .then(balance => that.setState({ result: web3.fromWei(balance).toString() }))
+      .catch(console.error)
+  }
+
+  render() {
+    return <Layout>
+      <section className='pad'>
+        <form>
+          <input type='text' placeholder='Enter your Ether address' value={this.state.address} onChange={this.changeAddress}/>
+          <p>{this.state.result}</p>
+        </form>
+      </section>
+    </Layout>
+  }
 }
 
 export default App;
