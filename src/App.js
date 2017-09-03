@@ -21,7 +21,8 @@ import jaxx10 from './jaxx/10.PNG';
 import jaxx11 from './jaxx/11.PNG';
 import jaxx12 from './jaxx/12.PNG';
 
-const Web3 = require('web3')
+// use global Web3 because yarn build fails on web3 in src
+const Web3 = window.Web3
 const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/tBZ5seblTdsWRfzyNu9j'))
 
 const App = () => (
