@@ -254,6 +254,10 @@ class Balance extends Component {
           }
         </form>
       </section>
+      <br/>
+
+      <div className='vbottom'></div>
+
     </Layout>
   }
 }

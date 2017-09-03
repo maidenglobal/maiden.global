@@ -7,7 +7,6 @@ body {
   color: #101010;
   background-color: #fff;
   line-height: 1.4;
-  min-height: 800px;
 }
 
 h1, h2 {
@@ -69,8 +68,8 @@ input[type='submit'] {
 input.address {
   color: #333;
   font-family: monospace;
-  width: 26.8em;
-  max-width: 80%;
+  font-size: 18px;
+  width: 606px;
 }
 
 input.error {
@@ -153,6 +152,8 @@ input.error {
 .pad-lg { padding: 50px; }
 .pad-giant { padding: 100px; }
 
+.vbottom { margin-bottom: 300px; }
+
 @media screen and ( max-width: 880px ) {
   .pad-giant { padding: 20px; }
 }
@@ -188,6 +189,12 @@ input.error {
   margin: 10px;
   box-shadow: none;
   border-radius: 0;
+}
+
+@media screen and ( max-width: 800px ) {
+  .button {
+    font-size: 16px;
+  }
 }
 
 section {
