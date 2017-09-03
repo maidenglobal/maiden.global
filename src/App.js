@@ -42,8 +42,8 @@ const Layout = ({ children}) => (
 
         <section>
           <Link to='/' className='button'>Home</Link>
-          <Link to='/challenge' className='button'>Take the Maiden Challenge</Link>
-          <Link to='/balance' className='button'>Check Ether Balance</Link>
+          <Link to='/challenge' className='button'>Maiden Challenge</Link>
+          <Link to='/balance' className='button'>Check Balance</Link>
         </section>
 
         <header className='pad-lg'>

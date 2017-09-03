@@ -1,5 +1,3 @@
-/* gold: rgb(196,169,164) */
-
 * { box-sizing: border-box; }
 img { max-width: 100%; }
 body {
@@ -9,6 +7,7 @@ body {
   color: #101010;
   background-color: #fff;
   line-height: 1.4;
+  min-height: 800px;
 }
 
 h1, h2 {
@@ -48,7 +47,7 @@ input {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
   font-size: 24px;
-  max-width: 100%;
+  max-width: 80%;
   width: 20em;
 }
 
@@ -63,12 +62,15 @@ input[type='submit'] {
   border: none;
   cursor: pointer;
   font-size: 24px;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 input.address {
   color: #333;
   font-family: monospace;
   width: 26.8em;
+  max-width: 80%;
 }
 
 input.error {
@@ -176,27 +178,6 @@ input.error {
   font-size: 64px;
 }
 
-.triangle-row {
-  white-space: nowrap;
-}
-
-.triangle {
-  fill: transparent;
-  stroke-width: 2px;
-}
-
-/* shift upside-down triangles-left */
-.triangle-up-svg {
-  margin-left: -16px;
-  margin-right: -16px;
-}
-
-.triangle-row-odd {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  margin-left: 2px;
-}
-
 .button {
   padding: 10px 15px;
   display: inline-block;
@@ -205,6 +186,8 @@ input.error {
   color: goldenrod;
   text-decoration: none;
   margin: 10px;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 section {
@@ -222,34 +205,4 @@ section {
 .dark .button {
   border: solid 1px #eee;
   color: #eee;
-}
-
-@media screen and ( max-height: 669px ){
-  .triangle-rows-top .triangle-row:nth-child(n+3) {
-    display: none;
-  }
-  .triangle-rows-bottom .triangle-row:nth-child(n+4) {
-    display: none;
-  }
-}
-
-@media screen and ( max-width: 1024px ){
-  /* 7 triangles total. Hide triangles based on screen width.  */
-  .triangle-svg:nth-child(-n+2) {
-    display: none;
-  }
-}
-
-@media screen and ( max-width: 377px ){
-  /* 7 triangles total. Hide triangles based on screen width.  */
-  .triangle-svg:nth-child(-n+4) {
-    display: none;
-  }
-}
-
-@media screen and ( max-width: 325px ){
-  /* 7 triangles total. Hide triangles based on screen width.  */
-  .triangle-svg:nth-child(-n+6) {
-    display: none;
-  }
 }
