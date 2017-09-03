@@ -65,6 +65,16 @@ input[type='submit'] {
   font-size: 24px;
 }
 
+input.address {
+  color: #333;
+  font-family: monospace;
+  width: 26.8em;
+}
+
+input.error {
+  border: solid 3px red;
+}
+
 .nobullets {
   list-style: none;
   padding: 0;
@@ -162,6 +172,10 @@ input[type='submit'] {
   color: #b2b2b2;
 }
 
+.text-giant {
+  font-size: 64px;
+}
+
 .triangle-row {
   white-space: nowrap;
 }
@@ -184,14 +198,17 @@ input[type='submit'] {
 }
 
 .button {
-  padding: 20px 50px;
-  font-size: 25px;
+  padding: 10px 15px;
   display: inline-block;
   min-width: 8em;
+  border: solid 1px goldenrod;
+  color: goldenrod;
+  text-decoration: none;
+  margin: 10px;
 }
 
 section {
-  margin-top: 40px;
+  margin-top: 10px;
   max-height: 100vh;
   max-width: 780px;
   display: inline-block;
