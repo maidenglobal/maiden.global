@@ -43,15 +43,6 @@ header img {
   overflow-y: none;
 }
 
-strike {
-  opacity: 0.5;
-}
-
-/* don't double dim */
-strike .text-dim {
-  color: inherit;
-}
-
 input {
   padding: 10px 15px;
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
@@ -85,15 +76,6 @@ input.error {
   border: solid 3px red;
 }
 
-.nobullets {
-  list-style: none;
-  padding: 0;
-}
-
-.clear {
-  overflow: hidden;
-}
-
 /* must be above center-override. */
 .center {
   display: table;
@@ -110,73 +92,15 @@ input.error {
   display: none;
 }
 
-/* if desktop, start out-of-focus instead of waiting for first mouse-move */
-@media screen and (min-width: 1025px) {
-  /** use arbitrary container class to match specifity of above rules. */
-}
-
-.rel {
-  position: relative;
-}
-
-.line-one {
-  margin-bottom: 2px;
-  font-size: 29px;
-}
-.line-two {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-size: 39px;
-}
-
-.hspread {
-  width: 100%;
-}
-
 .spread {
   width: 100%;
   height: 100%;
 }
-.block { display: block; }
-
-.space { margin: 25px; }
-.space-sm { margin: 10px; }
-.space-lg { margin: 50px; }
-.space-giant { margin: 100px; }
-
-.hspace { margin-left: 25px; margin-right: 25px; }
-.hspace-sm { margin-left: 10px; margin-right: 10px; }
-.hspace-lg { margin-left: 50px; margin-right: 50px; }
-.hspace-giant { margin-left: 100px; margin-right: 100px; }
 
 .vspace { margin-top: 25px; margin-bottom: 25px; }
 .vspace-sm { margin-top: 10px; margin-bottom: 10px; }
-.vspace-lg { margin-top: 50px; margin-bottom: 50px; }
-.vspace-giant { margin-top: 100px; margin-bottom: 100px; }
-
 .pad { padding: 25px; }
-.pad-sm { padding: 10px; }
 .pad-lg { padding: 50px; }
-.pad-giant { padding: 100px; }
-
-.vbottom { margin-bottom: 300px; }
-
-@media screen and ( max-width: 880px ) {
-  .pad-giant { padding: 20px; }
-}
-
-.pad-quarter {
-  padding-top: 25vh;
-  padding-bottom: 25vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-@media screen and ( max-width: 800px ) {
-  .pad-quarter {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 
 .text-dim {
   color: #b2b2b2;
@@ -219,7 +143,6 @@ section {
 
 .dark.button {
   border: solid 1px #eee;
-  color: #eee;
 }
 
 @media screen and (max-width: 320px ) {
