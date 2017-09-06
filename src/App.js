@@ -36,7 +36,7 @@ const App = () => (
 )
 
 const Layout = ({ children}) => (
-  <div>
+  <div className='root'>
     <div className='spread center'>
       <div className='center-wrapper'>
 
@@ -69,7 +69,7 @@ const Layout = ({ children}) => (
 
 const Home = () =>
   <Layout>
-    <section className='pad'>
+    <section>
       <h2>
         Maiden is dedicated to diversifying the leaders and makers of Finance and Blockchain technology through tech education, cultural events, and diversity-powered blockchain consulting.
       </h2>
@@ -90,7 +90,7 @@ const Home = () =>
             <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
               <input type="text" name="b_ab555efa78384cd5d0537ee96_cebbfa7890" tabIndex="-1" value="" />
             </div>
-            <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+            <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button dark" /></div>
           </div>
         </form>
       </div>
@@ -130,7 +130,7 @@ class Challenge extends Component {
 
   render() {
     return <Layout>
-      <section className='pad'>
+      <section>
         <h2>Solve the Maiden Challenge and we'll give you $10 for being awesome.</h2>
         <p>The Maiden Challenge walks you through the steps of setting up your own wallet to send and receive cryptocurrency.</p>
 
@@ -241,7 +241,7 @@ class Balance extends Component {
 
   render() {
     return <Layout>
-      <section className='pad'>
+      <section>
         <h2>Check your Ether balance:</h2>
         <form>
           <input className={'address ' + (this.state.error ? 'error' : '')} type='text' placeholder='Enter your Ether address' value={this.state.address} onChange={this.changeAddress}/>
