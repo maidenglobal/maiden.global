@@ -147,9 +147,10 @@ section {
         text-align: center;
         display: table;
         width: 100px;
-        padding: 0;
-        margin: 0.5rem 0;
+        padding: 0.5rem;
+        margin: 0;
         font-size: 1rem;
+        border-bottom: 2px solid transparent;
     }
 
     nav .button span {
@@ -157,8 +158,13 @@ section {
         vertical-align: middle;
     }
 
+    nav .button.active {
+        border-bottom: 2px solid goldenrod;
+    }
+
     nav {
         border-bottom: 1px solid goldenrod;
+        align-items: flex-end;
     }
 
     header img {

@@ -34,17 +34,26 @@ const App = () =>
     </div>
   </Router>;
 
-const Layout = ({ children }) =>
+const Layout = ({ children, activeTab }) =>
   <div className="root">
     <div className="center">
       <nav>
-        <Link to="/" className="button">
+        <Link
+          to="/"
+          className={activeTab === 'home' ? 'active button' : 'button'}
+        >
           <span>Home</span>
         </Link>
-        <Link to="/challenge" className="button">
+        <Link
+          to="/challenge"
+          className={activeTab === 'challenge' ? 'active button' : 'button'}
+        >
           <span>Maiden Challenge</span>
         </Link>
-        <Link to="/balance" className="button">
+        <Link
+          to="/balance"
+          className={activeTab === 'balance' ? 'active button' : 'button'}
+        >
           <span>Check Balance</span>
         </Link>
       </nav>
@@ -60,7 +69,7 @@ const Layout = ({ children }) =>
   </div>;
 
 const Home = () =>
-  <Layout>
+  <Layout activeTab="home">
     <h2 className="intro">
       Maiden is dedicated to diversifying the leaders and makers of Finance and
       Blockchain technology through tech education, cultural events, and
@@ -157,7 +166,7 @@ class Challenge extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout activeTab="challenge">
         <h2>
           Solve the Maiden Challenge and we'll give you $10 for being awesome.
         </h2>
@@ -274,7 +283,7 @@ class Balance extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout activeTab="balance">
         <h2>Check your Ether balance:</h2>
         <form>
           <input
