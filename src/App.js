@@ -61,7 +61,7 @@ const Layout = ({ children }) =>
 
 const Home = () =>
   <Layout>
-    <h2>
+    <h2 className="intro">
       Maiden is dedicated to diversifying the leaders and makers of Finance and
       Blockchain technology through tech education, cultural events, and
       diversity-powered blockchain consulting.
