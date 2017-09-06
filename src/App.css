@@ -18,7 +18,6 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 24px;
-  /*color: rgb(102,104,142);*/
 }
 
 ul {
@@ -31,6 +30,12 @@ li {
 
 header img {
   max-width: 100%;
+  margin: 2rem auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 .root {
@@ -52,8 +57,10 @@ input {
 }
 
 input[type='email'] {
-  font-size: 24px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid goldenrod;
 }
 
 input[type='submit'] {
@@ -61,7 +68,6 @@ input[type='submit'] {
   background-color: rgb(102,104,142);
   border: none;
   cursor: pointer;
-  font-size: 24px;
   box-shadow: none;
   border-radius: 0;
 }
@@ -76,13 +82,8 @@ input.error {
   border: solid 3px red;
 }
 
-/* must be above center-override. */
 .center {
-  display: table;
-}
-
-.center > * {
-  text-align: center;
+    text-align: center;
 }
 
 .left { text-align: left; }
@@ -92,15 +93,8 @@ input.error {
   display: none;
 }
 
-.spread {
-  width: 100%;
-  height: 100%;
-}
-
 .vspace { margin-top: 25px; margin-bottom: 25px; }
-.vspace-sm { margin-top: 10px; margin-bottom: 10px; }
 .pad { padding: 25px; }
-.pad-lg { padding: 50px; }
 
 .text-dim {
   color: #b2b2b2;
@@ -152,4 +146,27 @@ section {
   .dark.button {
     width: 17rem;;
   }
+}
+
+@media screen and (max-width: 600px ) {
+    nav .button {
+        border: none;
+        min-width: unset;
+        word-spacing: 100px;
+        width: 100px;
+        height: 3rem;
+        text-align: center;
+        display: table;
+        margin: 0;
+    }
+
+    nav .button span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    nav {
+        border-bottom: 1px solid goldenrod;
+    }
+
 }
