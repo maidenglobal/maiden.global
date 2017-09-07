@@ -31,7 +31,7 @@ export const Layout = ({ children, activeTab }) =>
           <img src={logo} className="App-logo" alt="logo" />
         </Link>
       </header>
-      <section>
+      <section className={activeTab}>
         {children}
       </section>
     </div>
