@@ -175,7 +175,9 @@ class Challenge extends Component {
           own wallet to send and receive cryptocurrency.
         </p>
 
-        <h2>Maiden Challenge I: Claiming your identity</h2>
+        <h2 className="button dark">
+          <span>Maiden Challenge I:</span> Claiming your identity
+        </h2>
         <div className="left">
           <ol>
             <li>
