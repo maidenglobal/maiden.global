@@ -103,7 +103,8 @@ input.error {
 img.pad {
     width: 300px;
     max-width: 80%;
-    margin: auto;
+    margin: 1rem;
+    display: block;
 }
 
 .text-dim {
