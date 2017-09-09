@@ -8,6 +8,10 @@ body {
   padding-bottom: 50px;
 }
 
+a {
+  color: #3092d2;
+}
+
 img {
   max-width: 100%;
 }
