@@ -7,6 +7,10 @@ body {
   line-height: 1.4;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2 {
   display: inline-block;
 }
@@ -16,7 +20,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+  margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 24px;
 }
@@ -34,13 +38,12 @@ a {
 }
 
 header img {
-  max-width: 100%;
-  margin: 2rem auto;
+  margin: 4rem auto 2rem auto;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .root {
@@ -99,6 +102,7 @@ input.error {
 }
 
 .vspace { margin-top: 25px; margin-bottom: 25px; }
+.vspace-lg { margin-top: 50px; margin-bottom: 50px; }
 
 img.pad {
     width: 300px;
@@ -127,12 +131,6 @@ img.pad {
   border-radius: 0;
 }
 
-@media screen and ( max-width: 800px ) {
-  .button {
-    font-size: 16px;
-  }
-}
-
 section {
   margin-top: 10px;
   max-height: 100vh;
@@ -153,6 +151,26 @@ section {
 h2.button.dark {
     border: none;
     width: 18rem;
+}
+
+h2.intro {
+    font-size: 1.6rem;
+}
+
+.challenge li {
+    margin-bottom: 1rem;
+}
+
+.challenge li:last-child {
+    margin-bottom: 0;
+}
+
+.challenge li span {
+    white-space: nowrap;
+}
+
+.challenge li a {
+    display: inline-block;
 }
 
 @media screen and (max-width: 600px ) {
@@ -188,30 +206,11 @@ h2.button.dark {
         margin-bottom: 1rem;
     }
 
+    .button {
+      font-size: 16px;
+    }
+
     .dark.button {
         font-size: 24px;
     }
-
-}
-
-h2.intro {
-    font-size: 1.2rem;
-    margin: 0 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.challenge li {
-    margin-bottom: 1rem;
-}
-
-.challenge li:last-child {
-    margin-bottom: 0;
-}
-
-.challenge li span {
-    white-space: nowrap;
-}
-
-.challenge li a {
-    display: inline-block;
 }

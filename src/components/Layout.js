@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import logo from '../MaidenLogo_500px.png';
 
-export const Layout = ({ children, activeTab }) =>
+const Layout = ({ children, activeTab }) =>
   <div className="root">
     <div className="center">
       <nav>
@@ -36,3 +36,5 @@ export const Layout = ({ children, activeTab }) =>
       </section>
     </div>
   </div>;
+
+export default Layout
