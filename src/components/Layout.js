@@ -20,10 +20,10 @@ const Layout = ({ children, activeTab }) =>
           <span>Maiden Challenge</span>
         </Link>
         <Link
-          to="/balance"
-          className={activeTab === 'balance' ? 'active button' : 'button'}
+          to="/about"
+          className={activeTab === 'about' ? 'active button' : 'button'}
         >
-          <span>Check Balance</span>
+          <span>About</span>
         </Link>
       </nav>
       <header>

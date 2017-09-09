@@ -1,10 +1,11 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   color: #101010;
   background-color: #fff;
   line-height: 1.4;
+  padding-bottom: 50px;
 }
 
 img {
@@ -31,10 +32,6 @@ ul {
 
 li {
   margin-top: 5px;
-}
-
-a {
-    display: block;
 }
 
 header img {
@@ -139,6 +136,10 @@ section {
   padding: 0 1rem;
 }
 
+section:last-child {
+  margin-bottom: 100px;
+}
+
 .dark {
   color: #eee;
   background-color: rgb(102,104,142);
@@ -171,6 +172,10 @@ h2.intro {
 
 .challenge li a {
     display: inline-block;
+}
+
+.compress > p {
+  margin: 2px;
 }
 
 @media screen and (max-width: 600px ) {
