@@ -1,3 +1,9 @@
+/*
+Purple: rgb(102,104,142);
+Middle purple: rgb(182,114,151);
+Gold: rgb(245,193,116);
+*/
+
 body {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
@@ -115,8 +121,10 @@ input.error {
   position: relative;
 }
 
+.pad { padding-top: 25px; padding-bottom: 25px; }
 .vspace { margin-top: 25px; margin-bottom: 25px; }
 .vspace-lg { margin-top: 50px; margin-bottom: 50px; }
+.vspace-giant { margin-top: 100px; margin-bottom: 100px; }
 
 img.pad {
     width: 500px;
@@ -162,15 +170,15 @@ section:last-child {
   margin-bottom: 100px;
 }
 
-.dark {
-  color: #eee;
-  background-color: rgb(102,104,142);
+.box {
+  border: solid 1px rgb(102,104,142);
 }
 
 .button.dark {
     width: 19rem;
     border: none;
     color: white;
+    background-color: rgb(102,104,142);
 }
 
 .button.small {
