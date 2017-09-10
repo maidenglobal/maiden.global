@@ -47,6 +47,10 @@ nav {
     justify-content: center;
 }
 
+nav .button {
+  padding: 10px 15px;
+}
+
 .root {
   position: fixed;
   top: 0;
@@ -68,7 +72,7 @@ input {
 input[type='email'] {
   text-align: center;
   margin-bottom: 20px;
-  border: 1px solid goldenrod;
+  border: 1px solid #98d1cd;
 }
 
 input[type='submit'] {
@@ -80,11 +84,16 @@ input[type='submit'] {
   border-radius: 0;
 }
 
+.address {
+  color: #666;
+  font-family: monospace;
+}
+
 input.address {
   color: #333;
   font-family: monospace;
   font-size: 18px;
-  border: 1px solid goldenrod;
+  border: 1px solid #98d1cd;
 }
 
 input.error {
@@ -102,13 +111,17 @@ input.error {
   display: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .vspace { margin-top: 25px; margin-bottom: 25px; }
 .vspace-lg { margin-top: 50px; margin-bottom: 50px; }
 
 img.pad {
-    width: 300px;
-    max-width: 80%;
-    margin: 1rem;
+    width: 500px;
+    max-width: 100%;
+    margin: 4rem;
     display: block;
 }
 
@@ -121,7 +134,7 @@ img.pad {
 }
 
 .button {
-  padding: 10px 15px;
+  padding: 10px 25px;
   display: inline-block;
   min-width: 8em;
   border: solid 1px goldenrod;
@@ -130,6 +143,11 @@ img.pad {
   margin: 10px;
   box-shadow: none;
   border-radius: 0;
+}
+
+.button.active {
+  border-color: #ccc;
+  color: #ccc;
 }
 
 section {
@@ -151,6 +169,12 @@ section:last-child {
 
 .button.dark {
     width: 19rem;
+    border: none;
+    color: white;
+}
+
+.button.small {
+  min-width: auto;
 }
 
 h2.button.dark {
@@ -180,6 +204,30 @@ h2.intro {
 
 .compress > p {
   margin: 2px;
+}
+
+.progress-bar-container {
+  height: 50px;
+}
+
+.progress-bar, .progress-bar-container > * {
+  height: 100%;
+}
+
+.progress-bar-step {
+  display: inline-block;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.progress-bar-step.active {
+  background-color: #98d1cd;
+}
+
+.progress-bar-text {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 @media screen and (max-width: 600px ) {

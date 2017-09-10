@@ -7,10 +7,7 @@ const Layout = ({ children, activeTab }) =>
   <div className="root">
     <div className="center">
       <nav>
-        <Link
-          to="/"
-          className={activeTab === 'home' ? 'active button' : 'button'}
-        >
+        <Link to="/" className='button'>
           <span>Home</span>
         </Link>
         <Link
