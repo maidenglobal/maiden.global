@@ -230,7 +230,7 @@ h2.intro {
   top: 10px;
 }
 
-@media screen and (max-width: 600px ) {
+@media screen and (max-width: 700px ) {
     nav .button {
         border: none;
         min-width: unset;
@@ -241,7 +241,6 @@ h2.intro {
         width: 100px;
         padding: 0.5rem;
         margin: 0;
-        font-size: 1rem;
         border-bottom: 2px solid transparent;
     }
 
@@ -262,6 +261,9 @@ h2.intro {
     header img {
         margin-bottom: 1rem;
     }
+}
+
+@media screen and (max-width: 600px ) {
 
     .button {
       font-size: 16px;
@@ -269,5 +271,9 @@ h2.intro {
 
     .dark.button {
         font-size: 24px;
+    }
+
+    .no-mobile {
+      display: none;
     }
 }
