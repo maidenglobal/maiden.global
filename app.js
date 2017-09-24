@@ -1,8 +1,10 @@
 const fs = require('fs')
 const express = require('express')
 const favicon = require('serve-favicon')
+const sslRedirect = require('heroku-ssl-redirect')
 
 const app = express()
+app.use(sslRedirect())
 app.use(express.static(__dirname + '/build'))
 app.use(favicon(__dirname + '/build/favicon.ico'))
 
