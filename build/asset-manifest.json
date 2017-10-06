@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.9dff9d43.css",
-  "main.css.map": "static/css/main.9dff9d43.css.map",
-  "main.js": "static/js/main.70cdda8f.js",
-  "main.js.map": "static/js/main.70cdda8f.js.map",
+  "main.css": "static/css/main.8ed805f1.css",
+  "main.css.map": "static/css/main.8ed805f1.css.map",
+  "main.js": "static/js/main.35aa0a2b.js",
+  "main.js.map": "static/js/main.35aa0a2b.js.map",
   "static/media/01.PNG": "static/media/01.d33a2e4d.PNG",
   "static/media/02.PNG": "static/media/02.8955ce4e.PNG",
   "static/media/03.PNG": "static/media/03.c0bf19f1.PNG",
@@ -15,5 +15,7 @@
   "static/media/10.PNG": "static/media/10.536c8b58.PNG",
   "static/media/11.PNG": "static/media/11.702a5f33.PNG",
   "static/media/12.PNG": "static/media/12.35d9abf9.PNG",
-  "static/media/MaidenLogo_500px.png": "static/media/MaidenLogo_500px.c68887ed.png"
+  "static/media/logo.png": "static/media/logo.c68887ed.png",
+  "static/media/raine.jpg": "static/media/raine.79e16ece.jpg",
+  "static/media/shira.jpg": "static/media/shira.9157b66b.jpg"
 }
