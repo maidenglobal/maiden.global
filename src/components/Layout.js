@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../MaidenLogo_500px.png';
+import logo from '../images/logo.png';
 
 const Layout = ({ children, activeTab }) =>
   <div className="root">
@@ -10,12 +10,16 @@ const Layout = ({ children, activeTab }) =>
         <Link to="/" className='button'>
           <span>Home</span>
         </Link>
+        {
+        /*
         <Link
           to="/challenge"
           className={activeTab === 'challenge' ? 'active button' : 'button'}
         >
           <span>Maiden Challenge</span>
         </Link>
+        */
+        }
         <Link
           to="/about"
           className={activeTab === 'about' ? 'active button' : 'button'}

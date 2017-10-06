@@ -238,6 +238,18 @@ h2.intro {
   top: 10px;
 }
 
+.paragraphs p {
+  text-align: left;
+}
+
+.bio-pic {
+  float: left;
+  margin-top: 1em;
+  margin-right: 1em;
+  width: 60%;
+  max-width: 425px;
+}
+
 @media screen and (max-width: 700px ) {
     nav .button {
         border: none;
