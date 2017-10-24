@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const express = require('express')
 const favicon = require('serve-favicon')
 const sslRedirect = require('heroku-ssl-redirect')
@@ -10,7 +11,7 @@ app.use(favicon(__dirname + '/build/favicon.ico'))
 
 const index = fs.readFileSync(__dirname + '/build/index.html')
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
