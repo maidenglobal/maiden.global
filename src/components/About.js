@@ -11,12 +11,12 @@ export default () =>
       <div className='compress'>
         <h1>Raine Revere</h1>
         <p>Co-Founder</p>
-        <p><a href='https://twitter.com/metaraine' target='_blank'>@metaraine</a></p>
+        <p><a href='https://twitter.com/metaraine' target='_blank' rel='noopener noreferrer'>@metaraine</a></p>
         <p><a href='mailto:raine@maiden.global'>raine@maiden.global</a></p>
       </div>
       <img src={raine} className='bio-pic' alt='Raine Revere' />
       <div className='paragraphs'>
-        <p>Raine Revere is an engineer and educator in the Ethereum community who has spoken at blockchain events across the world. Raine is the Lead Architect of ShapeShift Prism and is the co-founder of Maiden, a company that delivers socially-aware blockchain education, cultural &amp leadership development, and diversity-powered blockchain consulting. As a therapist, teacher, and cryptocurrency engineer, Raine has the unique capacity to engage deeply with both the technical and social aspects of technology.</p>
+        <p>Raine Revere is an engineer and educator in the Ethereum community who has spoken at blockchain events across the world. Raine is the Lead Architect of ShapeShift Prism and is the co-founder of Maiden, a company that delivers socially-aware blockchain education, cultural &amp; leadership development, and diversity-powered blockchain consulting. As a therapist, teacher, and cryptocurrency engineer, Raine has the unique capacity to engage deeply with both the technical and social aspects of technology.</p>
       </div>
     </div>
 
@@ -24,7 +24,7 @@ export default () =>
       <div className='compress'>
         <h1>Shira Frank</h1>
         <p>Co-Founder</p>
-        <p><a href='https://twitter.com/shirabfrank' target='_blank'>@shirabfrank</a></p>
+        <p><a href='https://twitter.com/shirabfrank' target='_blank' rel='noopener noreferrer'>@shirabfrank</a></p>
         <p><a href='mailto:shira@maiden.global'>shira@maiden.global</a></p>
       </div>
       <img src={shira} className='bio-pic' alt='Shira Frank' />
