@@ -42,7 +42,7 @@ class Layout extends React.Component {
 
       </div>
 
-      <div style={{ marginTop: 300 }}><span style={{ marginLeft: this.state.boatOffset }} className='inline-block rock' onClick={e => {
+      <div style={{ marginTop: 100 }}><span style={{ marginLeft: this.state.boatOffset }} className='inline-block rock' onClick={e => {
         this.setState({ boatOffset: this.state.boatOffset + 20 })
       }}>⛵</span> ️</div>
 
