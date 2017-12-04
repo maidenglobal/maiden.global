@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../images/logo.png';
+import logoOnly from '../images/logo-only-small.png';
 
-const Layout = ({ children, activeTab }) => {
+const Layout = ({ children, activeTab, label = false }) => {
 
   const NavButton = ({ children, to }) =>
     <Link
@@ -22,7 +23,7 @@ const Layout = ({ children, activeTab }) => {
 
       <header>
         <Link to='/'>
-          <img src={logo} className='App-logo' alt='logo' />
+          <img src={label ? logo : logoOnly} className='App-logo' alt='logo' />
         </Link>
       </header>
 

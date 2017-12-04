@@ -3,7 +3,7 @@ import Layout from './Layout.js';
 import { Link } from 'react-router-dom';
 
 const Home = () =>
-  <Layout activeTab="home">
+  <Layout activeTab="home" label="true">
     <h1 className='title'>Maiden creates a more intelligent economy by diversifying the leaders and makers in Finance and Blockchain Technology.</h1>
 
     <div className="left vspace-giant">
