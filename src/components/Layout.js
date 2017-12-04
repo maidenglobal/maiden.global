@@ -9,7 +9,7 @@ const Layout = ({ children, activeTab, label = false }) => {
   const NavButton = ({ children, to }) =>
     <Link
       to={'/' + to}
-      className={activeTab === 'consulting' ? 'active button' : 'button'}
+      className={activeTab === to ? 'active button' : 'button'}
     ><span>{children}</span></Link>
 
   return <div className='root'>

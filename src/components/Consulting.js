@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from './Layout.js';
 
 export default () =>
-  <Layout activeTab="Consulting">
+  <Layout activeTab="consulting">
 
     <h1 className='title'>Maiden offers a suite of blockchain consulting services.</h1>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from './Layout.js';
 
 export default () =>
-  <Layout activeTab="ApplyFellow">
+  <Layout activeTab="apply-fellow">
 
     <h1 className='title'>Three powerful ways to commit to diversity</h1>
 
@@ -14,7 +14,7 @@ export default () =>
       </ul>
     </div>
 
-    <div className="left">
+    <div className="left vspace-lg">
       <p>The Maiden Fellowship Program is a remote or in-person 10-week fellowship with individual mentoring from the Maiden leadership team, access to blockchain community and industry contacts, and the opportunity to contribute to increasing diversity in blockchain.</p>
 
       <p>Fellows will work with Maiden leadership to design an individualized work plan for the duration of the Fellowship. Applications will be accepted on a rolling basis. Phone interviews will be scheduled with qualified applicants.</p>
