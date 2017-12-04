@@ -68,6 +68,19 @@ nav .button {
   overflow-y: none;
 }
 
+.gradient-bottom {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d66544+0,8e3c65+100 */
+  background: #d66544; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d66544 0%, #8e3c65 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d66544 0%,#8e3c65 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d66544 0%,#8e3c65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d66544', endColorstr='#8e3c65',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
 input {
   padding: 10px 15px;
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
@@ -119,6 +132,10 @@ input.error {
 
 .relative {
   position: relative;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .pad { padding-top: 25px; padding-bottom: 25px; }
@@ -298,3 +315,192 @@ h2.button.dark {
       display: none;
     }
 }
+
+.rock:hover {
+  animation: rock  ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: rock  ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: rock  ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: rock  ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: rock  ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes rockLight {
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  29% {
+    transform:  rotate(-5deg) ;
+  }
+  69% {
+    transform:  rotate(5deg) ;
+  }
+  100% {
+    transform:  rotate(0deg) ;
+  }
+}
+
+@-moz-keyframes rockLight {
+  0% {
+    -moz-transform:  rotate(0deg) ;
+  }
+  29% {
+    -moz-transform:  rotate(-5deg) ;
+  }
+  69% {
+    -moz-transform:  rotate(5deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(0deg) ;
+  }
+}
+
+@-webkit-keyframes rockLight  {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  29% {
+    -webkit-transform:  rotate(-5deg) ;
+  }
+  69% {
+    -webkit-transform:  rotate(5deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+
+@-o-keyframes rockLight  {
+  0% {
+    -o-transform:  rotate(0deg) ;
+  }
+  29% {
+    -o-transform:  rotate(-5deg) ;
+  }
+  69% {
+    -o-transform:  rotate(5deg) ;
+  }
+  100% {
+    -o-transform:  rotate(0deg) ;
+  }
+}
+
+@-ms-keyframes rockLight  {
+  0% {
+    -ms-transform:  rotate(0deg) ;
+  }
+  29% {
+    -ms-transform:  rotate(-5deg) ;
+  }
+  69% {
+    -ms-transform:  rotate(5deg) ;
+  }
+  100% {
+    -ms-transform:  rotate(0deg) ;
+  }
+}
+
+.rock {
+  cursor: default;
+  animation: rockLight  ease-in 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: rockLight  ease-in 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: rockLight  ease-in 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: rockLight  ease-in 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: rockLight  ease-in 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+  transition: margin 1s;
+}
+
+@keyframes rock {
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  29% {
+    transform:  rotate(-20deg) translate(0,5px);
+  }
+  69% {
+    transform:  rotate(20deg) ;
+  }
+  100% {
+    transform:  rotate(0deg) ;
+  }
+}
+
+@-moz-keyframes rock {
+  0% {
+    -moz-transform:  rotate(0deg) ;
+  }
+  29% {
+    -moz-transform:  rotate(-20deg) translate(0,5px);
+  }
+  69% {
+    -moz-transform:  rotate(20deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(0deg) ;
+  }
+}
+
+@-webkit-keyframes rock  {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  29% {
+    -webkit-transform:  rotate(-20deg) translate(0,5px);
+  }
+  69% {
+    -webkit-transform:  rotate(20deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+
+@-o-keyframes rock  {
+  0% {
+    -o-transform:  rotate(0deg) ;
+  }
+  29% {
+    -o-transform:  rotate(-20deg) translate(0,5px);
+  }
+  69% {
+    -o-transform:  rotate(20deg) ;
+  }
+  100% {
+    -o-transform:  rotate(0deg) ;
+  }
+}
+
+@-ms-keyframes rock  {
+  0% {
+    -ms-transform:  rotate(0deg) ;
+  }
+  29% {
+    -ms-transform:  rotate(-20deg)  translate(0,5px);
+  }
+  69% {
+    -ms-transform:  rotate(20deg) ;
+  }
+  100% {
+    -ms-transform:  rotate(0deg) ;
+  }
+}
+
