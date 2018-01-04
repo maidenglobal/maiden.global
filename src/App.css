@@ -87,6 +87,7 @@ input {
   font-weight: 300;
   font-size: 20px;
   width: 17rem;
+  margin: 1%;
 }
 
 input[type='email'] {
@@ -195,6 +196,7 @@ section:last-child {
     width: 19rem;
     border: none;
     color: white;
+    margin-bottom: 10%;
     background-color: rgb(102,104,142);
 }
 
@@ -212,6 +214,17 @@ h2.button.dark {
   text-align: center;
 }
 
+.welcomeTitle{
+  font-weight: 500;
+  text-align: center;
+  font-size: 40px;
+}
+
+.ethDenverTitle{
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
 .challenge li {
     margin-bottom: 1rem;
 }
@@ -503,4 +516,3 @@ h2.button.dark {
     -ms-transform:  rotate(0deg) ;
   }
 }
-

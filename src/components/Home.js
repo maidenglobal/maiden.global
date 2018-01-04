@@ -4,18 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Home = () =>
   <Layout activeTab="home" label="true">
-    <h1 className='title'>Maiden creates a more intelligent economy by diversifying the leaders and makers in Finance and Blockchain Technology.</h1>
+  <h1 className = 'welcomeTitle'>Welcomes You to a New Frontier!</h1>
+    <h1 className='ethDenverTitle'>
+    Blockchain will change how the world operates as much as the Internet itself. Now is the time to involve a diverse population to generate new ideas, design, and implement the changes the world needs. Diversity will be key to bringing in new and unique perspectives and experiences to truly make the systems of the future work for everyone.
+    <p>Regardless of your background may you be a creative, person of color, athlete, philanthropist etc, there are ample opportunities for those with and without technical experience to engage with this new technological frontier at the EthDenver Hackathon.</p>
+    Begin your voyage into Blockchain with Maiden and apply for EthDenver here!</h1>
 
-    <div className="left vspace-giant">
-      <p>Maiden carries out its mission through three initiatives: </p>
-
-      <ol>
-        <li><b>Blockchain Education</b>: Teaching modern cryptocurrency investment and development skills to women, people of color, LGBTQIAP+, and others who have not traditionally had access to wealth.</li>
-        <li><b>Culture &amp; Leadership</b>: Creating new spaces in tech and finance that tap into the power of multiple identities and intelligences. </li>
-        <li><b>Diversity-Powered Consulting</b>: Providing expert-level <Link to='/consulting'>blockchain consulting</Link>, from token sale audits to smart contract development.</li>
-      </ol>
-    </div>
-    <p>Stay in the loop by signing up for our mailing list:</p>
     <Newsletter/>
   </Layout>
 
@@ -34,6 +28,15 @@ const Newsletter = () =>
         {
           // <label htmlFor="mce-EMAIL"></label><br/>
         }
+        <input
+          type="email"
+          name="NAME"
+          className="email"
+          id="mce-NAME"
+          placeholder="name"
+          required
+        />
+        <br/>
         <input
           type="email"
           name="EMAIL"
@@ -56,7 +59,7 @@ const Newsletter = () =>
         <div>
           <input
             type="submit"
-            value="Subscribe"
+            value="Submit"
             name="subscribe"
             id="mc-embedded-subscribe"
             className="button dark"
@@ -66,24 +69,6 @@ const Newsletter = () =>
     </form>
   </div>
 
-// const Events = () =>
-//   <div className='box vspace-giant pad'>
-//     <h1>Upcoming Events</h1>
-//     <p>
-//       <b>Decentralized Conversations</b><br/>
-//       Tuesday, Oct. 3, 6-8pm<br/>
-//       Boulder - Location TBD<br/>
-//     </p>
-//     <p>
-//       <b>Queering Finance</b><br/>
-//       Sunday, Oct. 8, 4-6pm<br/>
-//       Boulder - Location TBD<br/>
-//     </p>
-//     <p>
-//       <b>Queering Finance</b><br/>
-//       Thursday, Nov. 16, 6-8pm<br/>
-//       Denver - Location TBD<br/>
-//     </p>
-//   </div>
+
 
 export default Home
