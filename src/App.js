@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './components/Home.js';
+import EthDenver from './components/EthDenver.js';
 import Challenge from './components/Challenge.js';
 import Challenge1 from './components/Challenge1.js';
 import Challenge2 from './components/Challenge2.js';
@@ -18,7 +19,8 @@ import ApplyFellow from './components/ApplyFellow.js';
 const App = () =>
   <Router>
     <div>
-      <Route exact path="/" component={Home} />
+      
+      <Route exact path="/" component={EthDenver} />
       <Route path="/challenge" component={Challenge} />
       <Route path="/challenge1" component={Challenge1} />
       <Route path="/challenge2" component={Challenge2} />
