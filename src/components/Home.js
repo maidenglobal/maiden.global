@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Home = () =>
   <Layout activeTab="home" label="true">
-  <h1 className = 'welcomeTitle'>Welcomes You to a New Frontier!</h1>
+
+  <h1 className = 'title'>Maiden creates a more intelligent economy by diversifying the leaders and makers in Finance and Blockchain Technology.</h1>
+  
     <h1 className='ethDenverTitle'>
     Blockchain will change how the world operates as much as the Internet itself. Now is the time to involve a diverse population to generate new ideas, design, and implement the changes the world needs. Diversity will be key to bringing in new and unique perspectives and experiences to truly make the systems of the future work for everyone.
     <p>Regardless of your background may you be a creative, person of color, athlete, philanthropist etc, there are ample opportunities for those with and without technical experience to engage with this new technological frontier at the EthDenver Hackathon.</p>
