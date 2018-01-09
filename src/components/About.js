@@ -3,18 +3,9 @@ import Layout from './Layout.js'
 
 import shira from '../images/shira.jpg'
 import raine from '../images/raine.jpg'
-import { Link } from 'react-router-dom'
 
 export default () =>
   <Layout activeTab='about'>
-  <div className="left vspace-giant">
-    <h1 className='title'>Maiden carries out its mission through three initiatives:</h1>
-    <ol>
-      <li><b>Blockchain Education</b>: Teaching modern cryptocurrency investment and development skills to women, people of color, LGBTQIAP+, and others who have not traditionally had access to wealth.</li>
-      <li><b>Culture &amp; Leadership</b>: Creating new spaces in tech and finance that tap into the power of multiple identities and intelligences. </li>
-      <li><b>Diversity-Powered Consulting</b>: Providing expert-level <Link to='/consulting'>blockchain consulting</Link>, from token sale audits to smart contract development.</li>
-    </ol>
-  </div>
 
     <div>
       <div className='compress'>
@@ -23,7 +14,6 @@ export default () =>
         <p><a href='https://twitter.com/metaraine' target='_blank' rel='noopener noreferrer'>@metaraine</a></p>
         <p><a href='mailto:raine@maiden.global'>raine@maiden.global</a></p>
       </div>
-
       <img src={raine} className='bio-pic' alt='Raine Revere' />
       <div className='paragraphs'>
         <p>Raine Revere is an engineer and educator in the Ethereum community who has spoken at blockchain events across the world. Raine is the Lead Architect of ShapeShift Prism and is the co-founder of Maiden, a company that delivers socially-aware blockchain education, cultural &amp; leadership development, and diversity-powered blockchain consulting. As a therapist, teacher, and cryptocurrency engineer, Raine has the unique capacity to engage deeply with both the technical and social aspects of technology.</p>
