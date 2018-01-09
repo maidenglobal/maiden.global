@@ -2,6 +2,7 @@
 Purple: rgb(102,104,142);
 Middle purple: rgb(182,114,151);
 Gold: rgb(245,193,116);
+Teal: #97cac7;
 */
 
 body {
@@ -89,7 +90,7 @@ input {
   width: 17rem;
 }
 
-input[type='email'] {
+input[type='text'], input[type='email'] {
   text-align: center;
   border: 1px solid #98d1cd;
 }
@@ -140,6 +141,7 @@ input.error {
 
 .pad { padding-top: 25px; padding-bottom: 25px; }
 .vspace { margin-top: 25px; margin-bottom: 25px; }
+.vspace-sm { margin-top: 10px; margin-bottom: 10px; }
 .vspace-lg { margin-top: 50px; margin-bottom: 50px; }
 .vspace-giant { margin-top: 100px; margin-bottom: 100px; }
 
@@ -168,6 +170,13 @@ img.pad {
   margin: 10px;
   box-shadow: none;
   border-radius: 0;
+}
+
+.button.special {
+  border-color: #97cac7;
+  color: #97cac7;
+  font-weight: bold;
+  border-width: 2px;
 }
 
 .button.active {

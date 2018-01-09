@@ -15,10 +15,10 @@ class Layout extends React.Component {
 
   render() {
 
-    const NavButton = ({ children, to }) =>
+    const NavButton = ({ children, to, className }) =>
       <Link
         to={'/' + to}
-        className={this.props.activeTab === to ? 'active button' : 'button'}
+        className={'button ' + (this.props.activeTab === to ? 'active ' : ' ') + className}
       ><span>{children}</span></Link>
 
     return <div className='root'>
@@ -28,6 +28,7 @@ class Layout extends React.Component {
           <NavButton to=''>Home</NavButton>
           <NavButton to='consulting'>Consulting</NavButton>
           <NavButton to='about'>About</NavButton>
+          <NavButton to='ethdenver' className='special'>ETHDenver</NavButton>
         </nav>
 
         <header>
