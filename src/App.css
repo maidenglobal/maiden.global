@@ -46,6 +46,10 @@ li {
   margin-bottom: 20px;
 }
 
+ul.compact li {
+  margin-bottom: 5px;
+}
+
 header img {
   margin: 4rem auto 2rem auto;
 }
@@ -156,6 +160,10 @@ img.pad {
   color: #b2b2b2;
 }
 
+.text-emphasize {
+  font-size: 32px;
+}
+
 .text-giant {
   font-size: 64px;
 }
@@ -184,6 +192,11 @@ img.pad {
   color: #ccc;
 }
 
+.special-block {
+  background-color: #97cac7;
+  padding: 50px;
+}
+
 section {
   margin-top: 10px;
   max-height: 100vh;
@@ -205,6 +218,10 @@ section:last-child {
     border: none;
     color: white;
     background-color: rgb(102,104,142);
+}
+
+.text-dark {
+    color: rgb(102,104,142);
 }
 
 .button.small {

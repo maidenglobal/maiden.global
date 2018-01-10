@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Newsletter = ({ fields = ['email'] }) =>
+const Newsletter = ({ label = 'Subscribe', fields = ['email'], action }) =>
 
   <div id="mc_embed_signup">
     <form
-      action="//global.us16.list-manage.com/subscribe/post?u=ab555efa78384cd5d0537ee96&amp;id=cebbfa7890"
+      action={ action || "//global.us16.list-manage.com/subscribe/post?u=ab555efa78384cd5d0537ee96&amp;id=cebbfa7890" }
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
@@ -46,7 +46,7 @@ const Newsletter = ({ fields = ['email'] }) =>
         <div>
           <input
             type="submit"
-            value="Subscribe"
+            value={ label }
             name="subscribe"
             id="mc-embedded-subscribe"
             className="button dark"
