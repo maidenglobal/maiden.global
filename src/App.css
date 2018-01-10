@@ -2,6 +2,7 @@
 Purple: rgb(102,104,142);
 Middle purple: rgb(182,114,151);
 Gold: rgb(245,193,116);
+Teal: #97cac7;
 */
 
 body {
@@ -43,6 +44,10 @@ ul {
 li {
   margin-top: 5px;
   margin-bottom: 20px;
+}
+
+ul.compact li {
+  margin-bottom: 5px;
 }
 
 header img {
@@ -89,7 +94,7 @@ input {
   width: 17rem;
 }
 
-input[type='email'] {
+input[type='text'], input[type='email'] {
   text-align: center;
   border: 1px solid #98d1cd;
 }
@@ -140,6 +145,7 @@ input.error {
 
 .pad { padding-top: 25px; padding-bottom: 25px; }
 .vspace { margin-top: 25px; margin-bottom: 25px; }
+.vspace-sm { margin-top: 10px; margin-bottom: 10px; }
 .vspace-lg { margin-top: 50px; margin-bottom: 50px; }
 .vspace-giant { margin-top: 100px; margin-bottom: 100px; }
 
@@ -152,6 +158,10 @@ img.pad {
 
 .text-dim {
   color: #b2b2b2;
+}
+
+.text-emphasize {
+  font-size: 32px;
 }
 
 .text-giant {
@@ -170,9 +180,21 @@ img.pad {
   border-radius: 0;
 }
 
+.button.special {
+  border-color: #97cac7;
+  color: #97cac7;
+  font-weight: bold;
+  border-width: 2px;
+}
+
 .button.active {
   border-color: #ccc;
   color: #ccc;
+}
+
+.special-block {
+  background-color: #97cac7;
+  padding: 50px;
 }
 
 section {
@@ -196,6 +218,10 @@ section:last-child {
     border: none;
     color: white;
     background-color: rgb(102,104,142);
+}
+
+.text-dark {
+    color: rgb(102,104,142);
 }
 
 .button.small {
