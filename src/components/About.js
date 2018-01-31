@@ -16,7 +16,7 @@ export default () =>
       </div>
       <img src={raine} className='bio-pic' alt='Raine Revere' />
       <div className='paragraphs'>
-        <p>Raine Revere is an engineer and educator in the Ethereum community who has spoken at blockchain events across the world. Raine is the Lead Architect of ShapeShift Prism and is the co-founder of Maiden, a company that delivers socially-aware blockchain education, cultural &amp; leadership development, and diversity-powered blockchain consulting. As a therapist, teacher, and cryptocurrency engineer, Raine has the unique capacity to engage deeply with both the technical and social aspects of technology.</p>
+        <p>Raine Revere is an engineer and educator in the Ethereum community who has spoken at blockchain events around the world. Raine is the Lead Architect of ShapeShift Prism and is the co-founder of Maiden, a company that delivers socially-aware blockchain education, cultural &amp; leadership development, and diversity-powered blockchain consulting. As a therapist, teacher, and cryptocurrency engineer, Raine has the unique capacity to engage deeply with both the technical and social aspects of technology.</p>
       </div>
     </div>
 
