@@ -12,9 +12,7 @@ import Challenge5 from './components/Challenge5.js';
 import Challenge6 from './components/Challenge6.js';
 import About from './components/About.js';
 import Balance from './components/Balance.js';
-import Consulting from './components/Consulting.js';
 import ApplyFellow from './components/ApplyFellow.js';
-import EthDenver from './components/EthDenver.js';
 
 const App = () =>
   <Router>
@@ -29,9 +27,7 @@ const App = () =>
       <Route path="/challenge6" component={Challenge6} />
       <Route path="/about" component={About} />
       <Route path="/balance" component={Balance} />
-      <Route path="/consulting" component={Consulting} />
       <Route path="/apply-fellow" component={ApplyFellow} />
-      <Route path="/ethdenver" component={EthDenver} />
     </div>
   </Router>;
 
