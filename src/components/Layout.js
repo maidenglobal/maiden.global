@@ -24,6 +24,7 @@ class Layout extends React.Component {
 
         <nav>
           <NavButton to=''>Home</NavButton>
+          <NavButton to='labs'>Labs</NavButton>
           <NavButton to='about'>About</NavButton>
         </nav>
 

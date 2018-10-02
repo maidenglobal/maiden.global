@@ -4,10 +4,13 @@ import Newsletter from './Newsletter.js';
 
 const Home = () =>
   <Layout activeTab="home" label="true">
-    <h1 className='title'>Maiden creates a more intelligent economy by diversifying the leaders, makers, and culture of Blockchain Technology.</h1>
+    <h1 className='title'>Maiden Labs conducts comprehensive user learning research and develops authoritative, cross-cultural, and product-agnostic blockchain education to accelerate public trust and adoption.
+    </h1>
 
-    <div className="vspace-giant">
-      <p>Get ready for our big announcement. Sign up for our mailing list:</p>
+    <h2 className='vspace'>Maiden Lab is made possible by leading blockchain companies who are invested in the decentralized future. Membership is currently open.</h2>
+
+    <div className="vspace-lg">
+      <p>Sign up for our mailing list:</p>
       <Newsletter />
     </div>
   </Layout>

@@ -13,6 +13,7 @@ import Challenge6 from './components/Challenge6.js';
 import About from './components/About.js';
 import Balance from './components/Balance.js';
 import ApplyFellow from './components/ApplyFellow.js';
+import Labs from './components/Labs.js';
 
 const App = () =>
   <Router>
@@ -28,6 +29,7 @@ const App = () =>
       <Route path="/about" component={About} />
       <Route path="/balance" component={Balance} />
       <Route path="/apply-fellow" component={ApplyFellow} />
+      <Route path="/labs" component={Labs} />
     </div>
   </Router>;
 
