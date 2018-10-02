@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import logoOnly from '../images/logo-only-small.png';
 
-let boatOffset = 0
-
 class Layout extends React.Component {
 
   constructor(props) {
@@ -41,7 +39,7 @@ class Layout extends React.Component {
 
       </div>
 
-      <div style={{ marginTop: 100 }}><span style={{ marginLeft: this.state.boatOffset }} className='inline-block rock' onClick={e => {
+      <div style={{ marginTop: 100 }}><span role='img' aria-label='Maiden' style={{ marginLeft: this.state.boatOffset }} className='inline-block rock' onClick={e => {
         this.setState({ boatOffset: this.state.boatOffset + 20 })
       }}>⛵</span> ️</div>
 
